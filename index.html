@@ -49,6 +49,11 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 .bj-gitem{transition:transform .3s ease}.bj-gitem:hover{transform:translateY(-4px)}
 .bj-cta{max-width:80vw;line-height:1.35}
 @media (max-width: 760px){.bj-hero{min-height:100svh!important;padding:76px 20px 120px!important;justify-content:center!important}.bj-herologo{width:min(78vw,52svh)!important}.bj-hero p{margin-top:8px!important}}
+.bj-swipe{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-right:4px}
+.bj-swipe svg{animation:bjnudge 1.4s ease-in-out infinite}
+@keyframes bjnudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+@media (max-width: 760px){.bj-card{flex-basis:62vw!important}.bj-herologo img{filter:none!important}.bj-swipe{font-size:12px}}
+@media (prefers-reduced-motion: reduce){.bj-swipe svg{animation:none}}
 </style>
 
 </head>
@@ -83,7 +88,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #B4520F">01 · 6 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #3A2216">Cheesecake y tortas</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #3A2216">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: transparent; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: #3A2216; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -95,7 +100,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #E8701A">02 · 16 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #F5E6D3">Tortas especiales</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #F5E6D3">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: transparent; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: #F5E6D3; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -107,7 +112,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #B4520F">03 · 4 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #3A2216">Mantecadas</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #3A2216">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: transparent; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: #3A2216; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -119,7 +124,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #E8701A">04 · 3 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #F5E6D3">Brownies</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #F5E6D3">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: transparent; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: #F5E6D3; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -131,7 +136,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #B4520F">05 · 8 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #3A2216">Domos</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #3A2216">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: transparent; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: #3A2216; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -143,7 +148,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #E8701A">06 · 4 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #F5E6D3">Tortas mini</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #F5E6D3">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: transparent; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: #F5E6D3; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -155,7 +160,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #B4520F">07 · 4 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #3A2216">Corazones</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #3A2216">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: transparent; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: #3A2216; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -167,7 +172,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #E8701A">08 · 2 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #F5E6D3">Galletas</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #F5E6D3">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: transparent; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: #F5E6D3; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -179,7 +184,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #B4520F">09 · 10 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #3A2216">Pastelería en hojaldre</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #3A2216">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: transparent; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: #3A2216; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -191,7 +196,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #E8701A">10 · 2 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #F5E6D3">Brazo de reina</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #F5E6D3">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: transparent; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #F5E6D3; background: #F5E6D3; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
@@ -203,7 +208,7 @@ a{color:#9A4A0E}a:hover{color:#3A2216}
 <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #B4520F">11 · 7 productos</span>
 <h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; letter-spacing: -0.03em; color: #3A2216">Postres y más</h2>
 </div>
-<div style="display: flex; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center"><span class="bj-swipe" style="color: #3A2216">Desliza hacia el lado<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 <button type="button" aria-label="Ver anteriores" data-act="prev" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: transparent; color: #3A2216; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
 <button type="button" aria-label="Ver siguientes" data-act="next" class="bj-arrow" style="width: 56px; height: 56px; border-radius: 999px; border: 2px solid #3A2216; background: #3A2216; color: #F5E6D3; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
 </div>
